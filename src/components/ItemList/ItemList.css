@@ -1,0 +1,49 @@
+.item-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    height: auto;
+}
+
+hr {
+    width: 100%;
+}
+
+#deleteButton{
+    border: none;
+    background-color: gray;
+    color: white;
+    transition: 2;
+    border-radius: 5%;
+    width: 80px;
+}
+
+#deleteButton:hover {
+    cursor: pointer;
+    background-color: red;
+    /* transform: scale(5%); */
+}
+
+.texts {
+    width: 100px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width:400px) {
+
+    .item-list {
+        display: grid;
+        width: 50px;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .text-description {
+        grid-column: 1/3;
+        
+    }
+
+}

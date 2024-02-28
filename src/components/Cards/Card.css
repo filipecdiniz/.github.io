@@ -1,0 +1,41 @@
+.card-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid gray;
+    width: 232px;
+    height: 80px;
+
+}
+
+.card-value {
+    font-size: 20px;
+}
+
+.card-infos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width:400px) {
+    .card-div {
+        width: 200px;
+        height: 60px;
+        font-size: 14px;
+        padding: 10px;
+        /* gap: 0px; */
+    }
+
+    .card-value{
+        font-size: 16px;
+    }
+
+}
